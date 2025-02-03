@@ -3,8 +3,11 @@ import axios from "axios";
 import "./App.css";
 
 function App() {
-  // Separando os Hooks do React
+  // Hooks UseRef
   const InputRef = useRef();
+
+  // Hooks Usestate
+  const [weather, setweather] = useState({});
 
   {
     /* Criando a Função de Busca */
@@ -13,8 +16,8 @@ function App() {
     const city = InputRef.current.value;
     const Api = "62b7a6d0102fcb62feeda09e8b75a278";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Api}&units=metric&lang=pt_br`;
-    const data = await axios.get(url);
-    console.log(data)
+    const info = await axios.get(url);
+    setweather(info.data);
   }
 
   return (
