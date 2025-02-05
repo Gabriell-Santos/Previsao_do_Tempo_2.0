@@ -9,7 +9,7 @@ function App() {
   const InputRef = useRef();
 
   // Hooks Usestate
-  const [weather, setweather] = useState(null);
+  const [weather, setweather] = useState();
 
   {
     /* Criando a Função de Busca */
