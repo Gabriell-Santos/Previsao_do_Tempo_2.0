@@ -9,7 +9,7 @@ function App() {
   const InputRef = useRef();
 
   // Hooks Usestate
-  const [weather, setweather] = useState({});
+  const [weather, setweather] = useState(null);
 
   {
     /* Criando a Função de Busca */
@@ -27,7 +27,7 @@ function App() {
       <h2>Previsão do Tempo 2.0</h2>
       <input ref={InputRef} type="text" placeholder="Digite o nome da Cidade" />
       <button onClick={searchCity}>Buscar</button>
-      <Weatherinfo info={weather} />
+      {weather && <Weatherinfo info={weather} />}
     </div>
   );
 }
