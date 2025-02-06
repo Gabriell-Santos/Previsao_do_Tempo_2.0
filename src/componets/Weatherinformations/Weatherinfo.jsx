@@ -14,7 +14,7 @@ const Weatherinfo = ({info}) => {
         <p className="temperature"> {Math.round(info.main.temp)}° C </p>
         </div>
         <p className="description"> {info.weather[0].description} </p>
-        <div>
+        <div className="details">
             <p>Sensação térmica: {Math.round(info.main.feels_like)} °C </p>
             <p>Umidade: {info.main.humidity} </p>
             <p>Pressão: {info.main.pressure} </p>
