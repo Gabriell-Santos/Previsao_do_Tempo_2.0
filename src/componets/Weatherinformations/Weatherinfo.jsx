@@ -6,7 +6,7 @@ const Weatherinfo = ({info}) => {
     console.log(info);
 
   return (
-    <div className="container">
+    <div className="Weather-container">
         <h4>Previsões do Dia!</h4>
         <h2> {info.name} </h2>
         <div className="weather-info">
