@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Weather5Days"
+import "./WeatherInfo5Days"
 
 const Weather5Days = () => {
   return (

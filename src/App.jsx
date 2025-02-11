@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import axios from "axios";
 import "./App.css";
 import Weatherinfo from "./componets/Weatherinformations/Weatherinfo";
+import WeatherInfo5Days from "./componets/WeatherInfomations5Days/WeatherInfo5Days";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <input ref={InputRef} type="text" placeholder="Digite o Nome da Cidade" />
       <button onClick={searchCity}>Buscar</button>
       {weather && <Weatherinfo info={weather} />}
+      {Weather5Days && <WeatherInfo5Days info5Days={Weather5Days}/>}
     </div>
   );
 }
