@@ -18,6 +18,7 @@ function App() {
     const city = InputRef.current.value;
     const Api = "62b7a6d0102fcb62feeda09e8b75a278";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Api}&units=metric&lang=pt_br`;
+    const url5days = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${Api}&units=metric&lang=pt_br`
     const info = await axios.get(url);
     setweather(info.data);
   }
