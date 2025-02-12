@@ -7,7 +7,7 @@ const Weatherinfo = ({info}) => {
 
   return (
     <div className="Weather-container">
-        <h4>Previsões do Dia!</h4>
+        <h3>Previsões do Dia!</h3>
         <h2> {info.name} </h2>
         <div className="weather-info">
         <img src={`http://openweathermap.org/img/wn/${info.weather[0].icon}.png`} alt="Icone do Clima" />
