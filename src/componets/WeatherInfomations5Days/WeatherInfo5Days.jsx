@@ -11,8 +11,13 @@ const Weather5Days = ({ info5Days }) => {
   for(let forecast of info5Days){
       const date = new Date(forecast.dt * 1000).toLocaleDateString();
 
-      console.log(date)
+  // Pegando uma Data por dia  Previsão
+  if(!Dayforecast[date]){
+    Dayforecast[date] = forecast
   }
+  }
+
+  console.log(Dayforecast)
 
   return (
     <div className="weather-container">
