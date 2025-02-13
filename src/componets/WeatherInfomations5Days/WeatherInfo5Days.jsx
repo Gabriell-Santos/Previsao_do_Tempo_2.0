@@ -2,7 +2,6 @@ import React from "react";
 import "./WeatherInfo5Days.css";
 
 const Weather5Days = ({ info5Days }) => {
-  console.log(info5Days);
 
   // Pegando uma Previsão por Dia 
   let Dayforecast = {};
@@ -17,7 +16,9 @@ const Weather5Days = ({ info5Days }) => {
   }
   }
 
-  console.log(Dayforecast)
+  // Transformando dados em um Array 
+   const NextfiveDays = Object.values(Dayforecast).slice(0,5);
+   console.log(NextfiveDays);
 
   return (
     <div className="weather-container">
