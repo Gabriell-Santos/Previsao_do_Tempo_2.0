@@ -20,13 +20,22 @@ const Weather5Days = ({ info5Days }) => {
    const NextfiveDays = Object.values(Dayforecast).slice(1,6);
    console.log(NextfiveDays);
 
+
+   // Convertendo e pegando os dias da semana 
+   function DateConverter(date){
+      const newDate = new Date(date.dt * 1000).toLocaleDateString('pt-BR', {weekday: "long"});
+      return newDate;
+   }
+
   return (
     <div className="weather-container">
       <h3>Previsão daqui 5 Dias </h3>
       {NextfiveDays.map(forecast => (
         <div key={forecast.dt}>
-          <p>Quinta</p>
+          <p> {DateConverter(forecast)} </p>
           <img src={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`}/>
+          <p> {forecast.weather[0].description} </p>
+          <p> {Math.round(forecast.main.temp_min)}°C min / {Math.round(forecast.main.temp_max)}°C máx </p>
         </div>
       ))}
     </div>
