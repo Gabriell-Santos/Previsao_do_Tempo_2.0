@@ -18,8 +18,6 @@ const Weather5Days = ({ info5Days }) => {
 
   // Transformando dados em um Array 
    const NextfiveDays = Object.values(Dayforecast).slice(1,6);
-   console.log(NextfiveDays);
-
 
    // Convertendo e pegando os dias da semana 
    function DateConverter(date){

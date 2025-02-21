@@ -31,7 +31,7 @@ function App() {
     <div className="container">
       <h2>Previsão do Tempo 2.0</h2>
       <input ref={InputRef} type="text" placeholder="Digite o Nome da Cidade" />
-      <button onKeyDown={(e) => e.key === "enter" || searchCity()}>Buscar</button>
+      <button onKeyDown={(e) => e.key === "Enter" && searchCity()}>Buscar</button>
       {weather && <Weatherinfo info={weather} />}
       {Weather5Days && <WeatherInfo5Days info5Days={Weather5Days}/>}
     </div>
