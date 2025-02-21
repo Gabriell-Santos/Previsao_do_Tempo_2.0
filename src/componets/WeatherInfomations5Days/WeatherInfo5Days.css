@@ -4,3 +4,17 @@
     padding: 20px;
     margin: 20px 0;
 }
+
+.weather-container > h3{
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+.Weather-List{
+ display: flex;
+ justify-content: space-between;
+}
+
+.Weather-Item{
+text-align: center;
+background-color: rgba(255,255,255,0.5);
+}
