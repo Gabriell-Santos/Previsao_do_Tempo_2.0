@@ -30,7 +30,7 @@ const Weather5Days = ({ info5Days }) => {
   return (
     <div className="weather-container">
       <h3>Previsão daqui 5 Dias </h3>
-      <div>
+      <div className="Weather-List">
       {NextfiveDays.map(forecast => (
         <div key={forecast.dt} className="Weather-Item">
           <p> {DateConverter(forecast)} </p>
