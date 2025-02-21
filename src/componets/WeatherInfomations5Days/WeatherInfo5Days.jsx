@@ -33,9 +33,9 @@ const Weather5Days = ({ info5Days }) => {
       <div className="Weather-List">
       {NextfiveDays.map(forecast => (
         <div key={forecast.dt} className="Weather-Item">
-          <p> {DateConverter(forecast)} </p>
+          <p className="Forecast-Day"> {DateConverter(forecast)} </p>
           <img src={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`}/>
-          <p> {forecast.weather[0].description} </p>
+          <p className="Forecast-Description" > {forecast.weather[0].description} </p>
           <p> {Math.round(forecast.main.temp_min)}°C min / {Math.round(forecast.main.temp_max)}°C máx </p>
         </div>
       ))}

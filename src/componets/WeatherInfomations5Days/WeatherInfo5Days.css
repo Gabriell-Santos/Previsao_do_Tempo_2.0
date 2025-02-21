@@ -12,9 +12,23 @@
 .Weather-List{
  display: flex;
  justify-content: space-between;
+ flex-wrap: wrap;
+ gap: 10px;
+ align-items: center;
 }
 
 .Weather-Item{
 text-align: center;
-background-color: rgba(255,255,255,0.5);
+background-color: rgba(122, 115, 115, 0.186);
+padding: 10px;
+border-radius: 12px;
+}
+
+.Forecast-Day{
+    text-transform: capitalize;
+}
+
+.Forecast-Description{
+    text-transform: capitalize;
+    margin-bottom: 4px;
 }
