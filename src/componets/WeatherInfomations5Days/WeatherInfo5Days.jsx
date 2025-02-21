@@ -30,14 +30,16 @@ const Weather5Days = ({ info5Days }) => {
   return (
     <div className="weather-container">
       <h3>Previsão daqui 5 Dias </h3>
+      <div>
       {NextfiveDays.map(forecast => (
-        <div key={forecast.dt}>
+        <div key={forecast.dt} className="Weather-Item">
           <p> {DateConverter(forecast)} </p>
           <img src={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`}/>
           <p> {forecast.weather[0].description} </p>
           <p> {Math.round(forecast.main.temp_min)}°C min / {Math.round(forecast.main.temp_max)}°C máx </p>
         </div>
       ))}
+      </div>
     </div>
   );
 };
