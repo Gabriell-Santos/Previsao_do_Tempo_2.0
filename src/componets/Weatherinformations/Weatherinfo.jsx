@@ -3,8 +3,6 @@ import React from 'react'
 
 const Weatherinfo = ({info}) => {
     
-    console.log(info);
-
   return (
     <div className="Weather-container">
         <h3>Previsões do Dia!</h3>

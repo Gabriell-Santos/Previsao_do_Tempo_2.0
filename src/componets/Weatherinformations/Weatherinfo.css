@@ -37,3 +37,22 @@
     align-items: center;
     margin-right: 60px;
 }
+
+/* Responsividade */
+
+@media (max-width: 380px ){
+    .details{
+     font-size: 14px;
+     gap: 15px;
+     margin: auto;
+    }    
+}
+
+
+@media (max-width: 430px){
+    .details{
+        margin: auto;
+        gap: 25px;
+        text-align: center;
+    }
+}
