@@ -21,10 +21,14 @@ function App() {
     const Api = "62b7a6d0102fcb62feeda09e8b75a278";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Api}&units=metric&lang=pt_br`;
     const url5Days = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${Api}&units=metric&lang=pt_br`;
+    try{
     const info = await axios.get(url);
     const InfoApi5Days = await axios.get(url5Days);
     setweather5Days(InfoApi5Days.data.list);
     setweather(info.data);
+    }catch{
+      alert("Cidade não encontrada, por favor verifique se digitou corretamante!");
+    }
   }
 
   return (
