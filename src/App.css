@@ -38,3 +38,10 @@ button:hover{
     background-color: #f57c00;
 }
 
+
+@media (max-width:380px){
+    input::placeholder{
+        letter-spacing: 0px;
+    }
+}
+
