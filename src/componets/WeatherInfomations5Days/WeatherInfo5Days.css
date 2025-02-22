@@ -35,7 +35,7 @@ border-radius: 12px;
 
 /* Responsividade */
 
-@media (max-width: 380px){
+@media (max-width: 300px){
     .Weather-Item{
         padding-bottom: 18px;
         margin: auto;
