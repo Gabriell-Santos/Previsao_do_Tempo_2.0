@@ -31,3 +31,17 @@ Abra o terminal e execute o comando:
 ```bash
 git clone https://github.com/Gabriell-Santos/Previsao_do_Tempo_2.0.git
 ```
+### **3️⃣ Acesse o Diretório do Projeto
+```bash
+cd Previsao_do_Tempo_2.0
+```
+### **4️⃣ Instale as Dependências
+```bash
+npm install
+```
+### **5️⃣ Executar o Projeto
+```bash
+npm run dev
+```
+---
+✍️ Feito com amor por Gabriell-Santos ❤️🌎⛅
